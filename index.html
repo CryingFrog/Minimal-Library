@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.svg">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="favicon.svg" alt="book">
+        <h1>Minimal Library</h1>
+    </header>
+    <main class="main-container">
+        <button id="btnAdd" class="btn btn-add" onclick="showPopup()">+ Add book</button>
+        <div class="books-grid" id="booksGrid"></div>
+    </main>
+    <footer>
+        Copyright© 2023 AnxiousFrog
+    </footer>
+    <div id="popup" class="popup">
+        <div id="blocker" class="blocker" onclick="hidePopup()"></div>
+        <div id="bookForm">
+            <form id="form" action="" method="get">
+                <input id="title" type="text" placeholder="Title" required>
+                <input id="author" type="text" placeholder="Author" required>
+                <input id="pages" type="number" placeholder="N. Pages" required>
+                <label for="isRead"><input id="isRead" type="radio" value="read">Read</label>
+                <input id="submit" type="button" value="+Add" onclick="submitForm()">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
